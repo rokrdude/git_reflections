@@ -1,0 +1,7 @@
+Q:What happens when you initialize a repository? Why do you need to do it?
+
+A:Git begins keeping track of the files in the folder. Git will not keep track otherwise
+
+Q:How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A:Working directory lists all files in the directory (those that are part of the repository and those that are not). Staging area includes files that have been added to the repository but not yet committed.
