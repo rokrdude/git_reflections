@@ -23,6 +23,4 @@ Q:How might using version control make you more confident to make changes that c
 
 A:You can revert to previous commit to pinpoint the change
 
-Q:What happens when you initialize a repository? Why do you need to do it?
-
-A:Git begins keeping track of the files in the folder. Git will not keep track otherwise
+* Setting up Workspace (https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-3333158951)
