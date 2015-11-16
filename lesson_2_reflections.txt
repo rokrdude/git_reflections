@@ -1,7 +1,24 @@
 Q:What happens when you initialize a repository? Why do you need to do it?
 
-A:Git begins keeping track of the files in the folder. Git will not keep track otherwise
+A:Git begins keeping track of the files in the folder. Git will not keep track otherwise. Git does not automatically commit when initializing a repository.
 
 Q:How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-A:Working directory lists all files in the directory (those that are part of the repository and those that are not). Staging area includes files that have been added to the repository but not yet committed.
+A:Working directory lists all files in the directory (those that are part of the repository and those that are not). Staging area includes files that have been added/changed that you want to commit to the repository. This allows you to make changes to other files for testing, but exclude those files from the commit.
+
+Q:How can you use the staging area to make sure you have one commit per logical change?
+
+A:For each commit only include the files in the staging area with changes relating to the logical change.
+
+Q:What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A:If you have different versions of the program (e.g. easy-mode, Italian language, etc.). Also when project is publicly shared, can have a master branch where everything works, and a development branch to test out new things. Can set up different branches for unique or experimental features.
+
+Q:How do the diagrams help you visualize the branch structure?
+A:Can see where branches meet, and can also see any unreachable branches.
+
+Q:What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A: "git merge" will merge the specified branches into the currently checked out branch, and commit. The commit becomes the latest commit in the currently checked out branch. The merged commit contains pointers to each of the branches that were merged into the currently checked out branch; meaning the merged branches can still be accessed in the state they were in at the time of being merged into the currently checked out branch.
+
+Q:What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A:Time/efficiency.
